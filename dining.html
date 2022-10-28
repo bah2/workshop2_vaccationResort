@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/site.css">
+    <title>Workshop10282022</title>
+</head>
+
+<body>
+    <!-- Navbar menu -->
+    <nav class="navbar navbar-dark bg-primary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Devs Resort</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Devs Resort</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mortgage.html">Overnight stay</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                More of what you may need
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-light">
+                                <li><a class="dropdown-item" href="overnightstay.html">Dining</a></li>
+                                <li><a class="dropdown-item" href="dining.html">Car rental</a></li>
+                                <li><a class="dropdown-item" href="carrental.html"></a></li>
+                                <li>
+                                <li><a class="dropdown-item" href="activities.html">Activities</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-primary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-10 col-md-6">
+                    <h1>Developers Vaccation Resort</h1>
+                    <p class="lead my-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Maiores rem animi aliquid distinctio officia tempore nostrum
+                        fugiat neque assumenda dicta.</p>
+                    <!-- <button class="btn btn-primary btn-lg">Sign Up for december</button> -->
+                    <!-- over night form -->
+                    <div class="mb-3 row">
+                        <label for="staticOvernightstay" class="col-sm-2 col-form-label">Overnight</label>
+                        <div class="col-sm-10">
+                            <input type="text" readonly class="form-control-plaintext" id="staticOvernightstay"
+                                value="Overnight stay">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputName">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputCheckInDate" class="col-sm-2 col-form-label">Check-in date</label>
+                        <div class="col-sm-10">
+                            <input type="date" class="form-control" id="inputCheckInDate">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputNumberOfnight" class="col-sm-2 col-form-label">Nights</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="inputNumberOfnight">
+                        </div>
+                    </div>
+
+                    <!-- Radion buttons for room type -->
+                    <p>Room Type</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="radioQueen" id="radioQueen"
+                            value="radioQueen">
+                        <label class="form-check-label" for="radioQueen">QueenRadio</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="KingRadio" id="KingRadio" value="option2">
+                        <label class="form-check-label" for="KingRadio">King</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="2-BedroomSuite" id="2-BedroomSuite"
+                            value="option3">
+                        <label class="form-check-label" for="2-BedroomSuite">2-Bedroom Suite</label>
+                    </div>
+
+                    <br>
+
+
+                    <div class="mb-3 row">
+                        <label for="numberOfAdults" class="col-sm-2 col-form-label">Adults</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="numberOfAdults">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="numberOfChildren" class="col-sm-2 col-form-label">Children</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="numberOfChildren">
+                        </div>
+                    </div>
+                    <br>
+                    <!-- Discount option -->
+                    <p>Discount</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="NoneDiscount" id="NoneDiscount"
+                            value="NoneDiscount">
+                        <label class="form-check-label" for="NoneDiscount">None</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="aaadiscount10" id="aaadiscount10"
+                            value="aaadiscount10">
+                        <label class="form-check-label" for="2-BedroomSuite">AAA/Senior (10%)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="2-BedroomSuite" id="2-BedroomSuite"
+                            value="option3">
+                        <label class="form-check-label" for="2-BedroomSuite">Mitalitry(20%)</label>
+                    </div>
+                    <br>
+
+                    <input class="btn btn-primary" type="submit" value="Submit">
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+    </section>
+
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-10 col-md-6">
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+
+    <!-- <header id="main-header" class="bg-sucess text-white p4nmb-3"></header> -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+        </script>
+
+
+    <script src="scripts/main.js"></script>
+
+
+    <!-- footer -->
+    <footer class="p-5 bg-transparent text-dark text-center position-relative">
+        <div class="container">
+            <p class="lead">
+                Copyright &copy;2022 YearUp Appdev Workshop2_vaccationResort LCJ_Ibh
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>
